@@ -1,0 +1,50 @@
+@font-face {
+    font-family: descarga;
+    src: url(../fonts/HindSiliguri-Medium.ttf);
+}
+
+    
+body{
+    /* background-color: rgb(231, 202, 95); */
+    font-family: descarga;
+    padding: 0px;
+    margin:0px;
+    background-image: url(https://raw.githubusercontent.com/PGAugusto/romanticismo/main/imagenes/backgrounds/gold-pirates-icon-with-dark-blue-background-free-vector.jpg);
+
+}
+
+#contenedor1{
+    width: 80%;
+    background-color: rgb(177, 135, 75);
+    margin: auto;
+}
+p{
+    font-size: x-large;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-indent: 2em;
+}
+h1{
+    color: rgb(224, 35, 35);
+    font-size: 3vw;
+    margin-left:4%;
+    text-decoration: underline;
+}
+a{
+    cursor:cell;
+    color: darkred;
+}
+#espronceda{
+    width: 30%;
+    margin: 5%;
+    float: right;
+}
+.limpiafloat{
+    clear: both;
+}
+/* media queries */
+@media only screen and (width<=600px){/* se abre espacio de excesiones cuando estoy en ese tamaño*/
+    #espronceda{
+        width: 50%;
+    }
+}

@@ -1,0 +1,547 @@
+@font-face {
+    font-family:descarga;
+    src: url(../fonts/Anemone_F3_Demo.ttf);
+    
+}
+
+@font-face {
+  font-family:titulo;
+  src: url(../fonts/SecularOne-Regular.ttf);
+  
+}
+
+@font-face {
+  font-family:wrapper;
+  src: url(../fonts/HindSiliguri-SemiBold.ttf);
+}
+
+body{
+  color:black;
+    background-color: rgb(42, 87, 24);
+
+} 
+
+* {box-sizing:border-box;}   
+
+#wrapper{
+    background-color: #82E95B;
+    width: 80%;
+    margin: auto;
+    font-family: wrapper;
+}
+
+.titulo-seccion{
+  font-family: titulo;
+  font-size: 4rem;
+  text-align: center;
+  color:blue;
+  padding: 4% 0;
+}
+
+h2{
+  font-size: 1.8rem;
+}
+
+.enlace{
+  text-decoration: none;
+  color: #0e1aff;
+}
+
+.enlace:hover{color: rgb(104, 15, 15);}
+
+.centrado{
+  text-align: center;
+}
+/********************************************************************************************/
+nav{
+    position: sticky;
+    top:0;
+    z-index:99;
+    opacity: 0.75;
+}
+
+.topnav {
+  background-color: #229684;
+  overflow: hidden;
+}
+  
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.topnav a:hover {
+    background-color: rgb(150, 214, 232);
+    color: black;
+}
+
+.topnav a.active {
+  background-color: #0f1714;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/***************************************************************************************************************************************************************************************/
+
+
+.grid31 {display:grid;
+  grid-template-columns: 33% 33% 34%;}
+
+.col31 {padding:20px;}      
+
+.card{
+  background-color: #0e1aff;
+}
+  
+ /* Add some padding inside the card container */
+ .container {
+   padding: 2px 16px;
+   text-align: center;
+ }
+
+.card img{
+  width: 100%;
+  height: 325px;
+  transition: 1s;
+  padding: 10px;
+}
+
+.card img:hover{
+  opacity: 1;
+  filter: none;
+}
+
+.card a{
+  text-decoration: none;
+  font-weight: bold;
+  background-color: gray;
+  border-radius: 10px;
+  color:white;
+  padding: 10px;
+  transition: 0.5s;
+  margin-bottom: 10px;
+  display:inline-block;/*       separa el bloque superior y el inferior, pero no ocupa el espacio de punta a punta
+                                si hubiera otro inline-block lo pondria a continuacion...
+                                **********ES LO QUE SE USA EN LA BARRA DE  NAV****************/
+}
+
+.card a:hover{
+  background-color: rgb(153, 153, 153);
+  color:rgb(23, 19, 19);
+}
+
+
+
+/**********************HERO SECTION VERSION 1**************************/
+
+#hero{
+    background-image: url(../images/rute_cementerio.jpg);
+    height: 90vh;                   /*para que se agrande */
+    background-repeat: no-repeat;
+    background-size: cover;         /*ocupa todo el contenido*/
+    background-position: center;    /*para cuando se achique se quede el punto de interes en medio*/
+    text-align: center;
+    padding-top: 20px;
+    font-family: titulo;
+    font-size: 3rem;
+  }
+
+#titulo{
+    width: 50%;
+    background-color: rgba(240, 255, 255, 0.47);
+    margin: auto;
+    padding: 20px;
+    margin-top: 5%; 
+    color: darkgreen;
+  }
+
+
+/**************************** SECCION INTRODUCCION *******************************/
+
+.gridturist{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.columna4t{
+  padding: 20px;
+  background-size: cover;
+}
+
+.columna4t img{
+  width: 100%;
+  height: 320px;
+  transition: 1s;
+  padding: 10px;
+}
+
+
+/**************************** SECCION IDEAS *************************************/
+#nature{
+  background-color: #4dd9b1;
+}
+
+/************ titulo de secciones *****************/
+
+.grid2{
+  display: grid;
+  grid-template-columns: 50% 50%;  
+}
+
+/********que corra el aire (ver box-sizing arriba)***/
+.texto{
+  padding: 20px;
+  font-size: 1.1rem;
+}
+
+.col2 ul{
+  list-style-image: url(../images/red\ check.png);
+}
+
+/********selector combinado (img DENTRO de .col2) *****/
+
+.col2 img {
+  width: 100%;
+}
+
+/************ titulo de secciones *****************/
+
+.grid4 {display:grid;
+  grid-template-columns: 25% 25% 25% 25%;}
+
+.col4 {padding:20px;}      
+  
+/*aqui iba el grid 4 hover etc*/
+  
+
+
+
+/********************************************* Section galeria ***************************************************/
+
+.grid2 {display:grid;
+  grid-template-columns: 50% 50%;}
+
+.col2 {padding:20px;}
+
+.texto1{
+  padding-top: 12%;
+  font-size: 1.2rem;
+}
+
+.texto2{
+  font-size: 1.2rem;
+  padding-top: 15%;
+}
+
+.enlace2{
+  color:darkgreen;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container1 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/********************************************* Section contacto ***************************************************/
+
+
+.enlace1{
+  color:#bb0000
+}
+
+.gridcolumna {display:grid;
+  grid-template-columns: 35% 65%;}
+
+.columna {padding-top:65%;
+}  
+
+.container2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 62.5%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  max-width: 42%;
+  padding: 0 5%;
+  text-align:end;
+}
+
+.column img {
+  margin-left: 30%;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+
+
+/***************************************** FOOTER CON GRID DE 3 COLUMNAS **********************************************/
+
+footer{
+background-color: rgb(13, 46, 72);
+padding: 5% 0%;
+}
+
+.grid3{
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+}
+
+.col3{
+padding: 6%;
+}
+
+.enlace{
+  color: #82E95B;
+}
+
+.col3 img{
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.fa{
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+/********************MEDIA QUERIES********************/
+
+
+@media only screen and (width<=1000px){
+
+  #wrapper { width: 100%;
+             font-size:1.5rem ; }
+  }
+
+
+@media only screen and (width<=900px){
+
+        #titulo4{
+          font-size: 5vh;
+        }
+
+        .c1{
+          margin-right: 15%;
+         }
+
+        .gridturist{
+          grid-template-columns: 50% 50%;
+        }
+
+        .grid2{
+          grid-template-columns: 100%;     /*el grid pasa a ser una columna en tablets*/
+        }
+
+        .grid4{
+          grid-template-columns: 50% 50%;
+       }
+
+       .columna{
+        grid-template-columns: 100%;
+        margin-bottom: 10%;
+        padding-top: 5%;
+      }
+      
+      .column{
+        margin-left: -10%;
+        flex: 100%;
+      }
+
+      .gridcolumna{
+        grid-template-columns: 100%;
+      }
+
+       #lista2{
+          margin-top: -50px;
+       }
+
+       .texto2{
+        padding-top: -15%;/******************************************************************/
+       }
+
+       .grid3{
+        grid-template-columns: 50% 50%;
+        font-size: 1.2rem;
+       }
+}
+
+@media only screen and (width<=900px){
+  .c1{
+    margin-right: 11%;
+   }
+}
+
+
+@media only screen and (width<=800px){
+  .grid31{
+    grid-template-columns: 100%;
+   }
+
+   .cardA img{
+      height: 20%;
+   }
+}
+
+
+@media only screen and (width<=600px){
+
+        #titulo{ 
+         width: 80%; /*esto para moviles para que se haga mas grande el recuadro y no se salga la letra*/
+        }
+
+        .col2{
+          font-size:1rem ;
+        }
+
+        .columna{
+          grid-template-columns: 100%;
+        }
+
+        .gridcolumna{
+          grid-template-columns: 100%;
+        }
+
+        .column{
+          flex: 100%;
+          max-width: 100%;
+        }
+
+        h2{
+          font-size: 1.3rem;
+        }
+
+        .grid31{
+          grid-template-columns: 100%;
+         }
+
+        .texto2{
+          padding-top: 5%;
+        }
+
+        .gridturist{
+          grid-template-columns: 100%;
+        }
+
+        .grid4{
+          grid-template-columns: 100%;
+        }
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    font-size:1rem ;
+    margin-left: -27%;
+  }
+}
