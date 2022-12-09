@@ -34,7 +34,23 @@ body{
   font-family: titulo;
   font-size: 4rem;
   text-align: center;
-  color:blue;
+  color:rgb(13, 46, 72);
+  padding: 4% 0;
+}
+
+#history{
+  background-color: #0D2E48;
+}
+
+#nature{
+  background-color: #0D2E48;
+}
+
+.titulo-seccion2{
+  font-family: titulo;
+  font-size: 4rem;
+  text-align: center;
+  color:#82E95B;
   padding: 4% 0;
 }
 
@@ -61,7 +77,7 @@ nav{
 }
 
 .topnav {
-  background-color: #229684;
+  background-color: #37465D;
   overflow: hidden;
 }
   
@@ -116,7 +132,8 @@ nav{
 
 
 .grid31 {display:grid;
-  grid-template-columns: 33% 33% 34%;}
+  grid-template-columns: 33% 33% 34%;
+padding-bottom: 5%;}
 
 .col31 {padding:20px;}      
 
@@ -207,11 +224,6 @@ nav{
 }
 
 
-/**************************** SECCION IDEAS *************************************/
-#nature{
-  background-color: #4dd9b1;
-}
-
 /************ titulo de secciones *****************/
 
 .grid2{
@@ -250,7 +262,8 @@ nav{
 /********************************************* Section galeria ***************************************************/
 
 .grid2 {display:grid;
-  grid-template-columns: 50% 50%;}
+  grid-template-columns: 50% 50%;
+padding-bottom: 7%;}
 
 .col2 {padding:20px;}
 
