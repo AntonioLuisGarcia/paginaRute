@@ -42,9 +42,9 @@ h2{
   font-size: 1.8rem;
 }
 
-.enlace{
+.enlacE{
   text-decoration: none;
-  color: #0e1aff;
+  color: rgb(23, 60, 87);
 }
 
 .enlace:hover{color: rgb(104, 15, 15);}
