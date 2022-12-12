@@ -58,13 +58,23 @@ a{
   padding: 4% 0;
 }
 
+.titulo-seccion21{
+  font-family: titulo;
+  font-size: 4rem;
+  text-align: center;
+  color:#82E95B;
+  padding: 4% 0;
+  margin-bottom: -10%
+}
+
 h2{
   font-size: 1.8rem;
 }
 
 .enlacE{
   text-decoration: none;
-  color: rgb(23, 60, 87);
+  color: rgb(2, 32, 53);
+  font-weight: bold;
 }
 
 .enlace:hover{color: rgb(104, 15, 15);}
@@ -236,6 +246,15 @@ padding-bottom: 5%;}
 }
 
 
+.col22{
+  padding: 20px;
+  padding-right: -10px;
+}
+
+.col23{
+  padding: 25px;
+}
+
 /************ titulo de secciones *****************/
 
 .grid2{
@@ -273,11 +292,11 @@ padding-bottom: 5%;}
 
 /********************************************* Section galeria ***************************************************/
 
-.grid2 {display:grid;
+.grid24 {display:grid;
   grid-template-columns: 50% 50%;
 padding-bottom: 7%;}
 
-.col2 {padding:20px;}
+.col2 {padding:25px;}
 
 .texto1{
   padding-top: 12%;
@@ -290,7 +309,7 @@ padding-bottom: 7%;}
 }
 
 .enlace2{
-  color:darkgreen;
+  color:rgb(0, 255, 0);
 }
 
 .container {
@@ -452,7 +471,27 @@ padding: 6%;
     .gridturist{
       grid-template-columns: 50% 50%;
     }
+
+    .col2 {padding-top:1%;}
   }
+
+  @media only screen and (width<=1300px){
+
+    .grid24{
+      grid-template-columns: 100%;
+    }
+
+  }
+  
+
+  @media only screen and (width<=1200px){
+
+    .grid2{
+      grid-template-columns: 100%;
+    }
+
+  }
+
 
 @media only screen and (width<=1000px){
 
@@ -462,6 +501,24 @@ padding: 6%;
              .column{
               margin-left: 10%;
             }
+
+    .gridcolumna{
+      grid-template-columns: 100%;
+    }
+
+    .columna{
+      padding-top: 5%;
+    }
+
+    .column img{
+      margin-left: 50%;
+    }
+
+    iframe{
+      width: 70%;
+      height: 60%;
+      margin-bottom: 40%;
+    }
 
     .gridturist{
       grid-template-columns: 50% 50%;
@@ -478,9 +535,6 @@ padding: 6%;
         .c1{
           margin-right: 15%;
          }
-        .grid2{
-          grid-template-columns: 100%;     /*el grid pasa a ser una columna en tablets*/
-        }
 
         .grid4{
           grid-template-columns: 50% 50%;
@@ -540,8 +594,9 @@ padding: 6%;
       height: 150%;
     }
 
-    
-
+    .column img{
+      margin-left: 26%;
+    }
 
 }
 
@@ -567,6 +622,11 @@ padding: 6%;
         .column{
           flex: 100%;
           max-width: 100%;
+          font-size: large;
+        }
+
+        .column img{
+          margin-left: 30%;
         }
 
         h2{
