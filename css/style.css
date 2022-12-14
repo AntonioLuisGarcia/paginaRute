@@ -1,10 +1,4 @@
 @font-face {
-    font-family:descarga;
-    src: url(../fonts/Anemone_F3_Demo.ttf);
-    
-}
-
-@font-face {
   font-family:titulo;
   src: url(../fonts/SecularOne-Regular.ttf);
   
@@ -64,7 +58,7 @@ a{
   text-align: center;
   color:#82E95B;
   padding: 4% 0;
-  margin-bottom: -10%
+  margin-bottom: -5%
 }
 
 h2{
@@ -82,7 +76,7 @@ h2{
 .centrado{
   text-align: center;
 }
-/********************************************************************************************/
+/*****************************Barra de navegacion***************************************************************/
 nav{
     position: sticky;
     top:0;
@@ -162,8 +156,11 @@ padding-bottom: 5%;}
   overflow: hidden;
   background-color: black;
 }
+
+.imagenCard2{
+  height: 325px;
+}
   
- /* Add some padding inside the card container */
  .container {
    padding: 2px 16px;
    text-align: center;
@@ -190,9 +187,7 @@ padding-bottom: 5%;}
   padding: 10px;
   transition: 0.5s;
   margin-bottom: 10px;
-  display:inline-block;/*       separa el bloque superior y el inferior, pero no ocupa el espacio de punta a punta
-                                si hubiera otro inline-block lo pondria a continuacion...
-                                **********ES LO QUE SE USA EN LA BARRA DE  NAV****************/
+  display:inline-block;       
 }
 
 .card a:hover{
@@ -202,14 +197,14 @@ padding-bottom: 5%;}
 
 
 
-/**********************HERO SECTION VERSION 1**************************/
+/**********************HERO SECTION **************************/
 
 #hero{
     background-image: url(../images/rute_cementerio.jpg);
-    height: 90vh;                   /*para que se agrande */
+    height: 90vh;                   
     background-repeat: no-repeat;
-    background-size: cover;         /*ocupa todo el contenido*/
-    background-position: center;    /*para cuando se achique se quede el punto de interes en medio*/
+    background-size: cover;         
+    background-position: center;    
     text-align: center;
     padding-top: 20px;
     font-family: titulo;
@@ -255,50 +250,23 @@ padding-bottom: 5%;}
   padding: 25px;
 }
 
-/************ titulo de secciones *****************/
-
 .grid2{
   display: grid;
   grid-template-columns: 50% 50%;  
 }
 
-/********que corra el aire (ver box-sizing arriba)***/
-.texto{
-  padding: 20px;
-  font-size: 1.1rem;
-}
-
-.col2 ul{
-  list-style-image: url(../images/red\ check.png);
-}
-
-/********selector combinado (img DENTRO de .col2) *****/
-
-.col2 img {
-  width: 100%;
-}
-
-/************ titulo de secciones *****************/
-
-.grid4 {display:grid;
-  grid-template-columns: 25% 25% 25% 25%;}
-
-.col4 {padding:20px;}      
-  
-/*aqui iba el grid 4 hover etc*/
-  
-
-
-
-/********************************************* Section galeria ***************************************************/
 
 .grid24 {display:grid;
   grid-template-columns: 50% 50%;
-padding-bottom: 7%;}
-
-.col2 {padding:25px;}
-
-.texto1{
+  padding-bottom: 7%;}
+  
+  .col2 {padding:25px;}
+  
+  .col2 img {
+    width: 100%;
+  }
+  
+  .texto1{
   padding-top: 12%;
   font-size: 1.2rem;
 }
@@ -359,13 +327,15 @@ padding-bottom: 7%;}
   padding-bottom: 20px;
 }
 
+
+        /*estraido de w3school*/
+
 .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 50%;
   max-width: 42%;
@@ -395,6 +365,24 @@ iframe{
 #contacto{
   padding-bottom: 2%;
   color:black
+}
+
+/*extraido de w3school*/
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    font-size:1rem ;
+    margin-left: -27%;
+  }
 }
 
 /***************************************** FOOTER CON GRID DE 3 COLUMNAS **********************************************/
@@ -447,11 +435,6 @@ padding: 6%;
   color: white;
 }
 
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
 .fa-youtube {
   background: #bb0000;
   color: white;
@@ -480,16 +463,13 @@ padding: 6%;
     .grid24{
       grid-template-columns: 100%;
     }
-
   }
   
-
   @media only screen and (width<=1200px){
 
     .grid2{
       grid-template-columns: 100%;
     }
-
   }
 
 
@@ -536,10 +516,6 @@ padding: 6%;
           margin-right: 15%;
          }
 
-        .grid4{
-          grid-template-columns: 50% 50%;
-       }
-
        .columna{
         grid-template-columns: 100%;
         margin-bottom: 10%;
@@ -564,7 +540,7 @@ padding: 6%;
        }
 
        .texto2{
-        padding-top: -15%;/******************************************************************/
+        padding-top: -15%;
        }
 
        .grid3{
@@ -645,31 +621,7 @@ padding: 6%;
           grid-template-columns: 100%;
         }
 
-        .grid4{
-          grid-template-columns: 100%;
-        }
-
         .column{
           margin-left: -7%;
-        }
-  
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-    font-size:1rem ;
-    margin-left: -27%;
-  }
+        } 
 }
