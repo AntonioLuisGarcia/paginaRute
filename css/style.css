@@ -367,23 +367,6 @@ iframe{
   color:black
 }
 
-/*extraido de w3school*/
-
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-    font-size:1rem ;
-    margin-left: -27%;
-  }
-}
 
 /***************************************** FOOTER CON GRID DE 3 COLUMNAS **********************************************/
 
@@ -602,7 +585,7 @@ padding: 6%;
         }
 
         .column img{
-          margin-left: 7.5%;
+          margin-left: 30%;
         }
 
         h2{
