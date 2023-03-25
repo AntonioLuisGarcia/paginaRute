@@ -139,7 +139,7 @@ nav{
     text-align: left;
   }
 }
-/***************************************************************************************************************************************************************************************/
+/*******************************************************************SECTION GENERAL*********************************************************************************/
 
 
 .grid31 {display:grid;
@@ -224,7 +224,7 @@ padding-bottom: 5%;}
   }
 
 
-/**************************** SECCION INTRODUCCION *******************************/
+/**************************** SECCION TURIST *******************************/
 
 .gridturist{
   display: grid;
@@ -261,11 +261,14 @@ padding-bottom: 5%;}
 }
 
 
-.grid24 {display:grid;
+.grid24 {
+  display:grid;
   grid-template-columns: 50% 50%;
   padding-bottom: 7%;}
   
-  .col2 {padding:25px;}
+  .col2 {
+    padding:25px;
+  }
   
   .col2 img {
     width: 100%;
@@ -295,9 +298,11 @@ padding-bottom: 5%;}
 
 .container1 {
   position: relative;
-  overflow: hidden;
+  overflow: inherit;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 54.25%;
+  padding-bottom: 8%;
+  margin-bottom: 10%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
@@ -312,7 +317,7 @@ padding-bottom: 5%;}
 }
 
 
-/********************************************* Section contacto ***************************************************/
+/********************************************* SECTION CONTACTO ***************************************************/
 
 
 .enlace1{
@@ -436,7 +441,7 @@ padding: 6%;
 }
 
 
-/********************MEDIA QUERIES********************/
+/*******************************************************************MEDIA QUERIES*******************************************************************************/
 
 
 @media only screen and (width<=1500px){
@@ -636,5 +641,8 @@ padding: 6%;
     max-width: 100%;
     font-size:1rem ;
     margin-left: -27%;
+  }
+  .container1{
+    padding-bottom: 2%;
   }
 }
